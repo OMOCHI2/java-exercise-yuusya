@@ -16,8 +16,9 @@ public class Main {
     w.heal(h2);
 
     SuperHero sh = new SuperHero();
+    sh.attack();
     sh.fly();
-    sh.land();
-    sh.run();
+    sh.attack();
+
   }
 }
