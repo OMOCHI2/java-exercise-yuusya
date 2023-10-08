@@ -8,6 +8,7 @@ public class Main {
     System.out.println(h.name + "の現在の武器は" + h.sword.name);
 
     Hero h2 = new Hero("アサガ");
+    Matango m = new Matango('A');
 
     Wizard w = new Wizard();
     w.name = "スガワラ";
@@ -20,5 +21,8 @@ public class Main {
     sh.fly();
     sh.attack();
 
+    Dancer d = new Dancer();
+    d.dance();
+    d.attack(m);
   }
 }
