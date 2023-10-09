@@ -11,18 +11,13 @@ public class Main {
     Matango m = new Matango('A');
 
     Wizard w = new Wizard();
-    w.name = "スガワラ";
-    w.hp = 50;
+    Character c = w;
+    c.name = "スガワラ";
+    c.hp = 50;
     w.heal(h);
     w.heal(h2);
-
-    SuperHero sh = new SuperHero();
-    sh.attack();
-    sh.fly();
-    sh.attack();
-
-    Dancer d = new Dancer();
-    d.dance();
-    d.attack(m);
+    c.attack(m);
+    w.fireball(m);
+    System.out.println(w.mp);
   }
 }
