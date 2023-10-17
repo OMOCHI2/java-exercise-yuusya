@@ -17,7 +17,10 @@ public class Main {
     w.heal(h);
     w.heal(h2);
     c.attack(m);
-    w.fireball(m);
+    if (c instanceof Wizard) {
+      Wizard w2 = (Wizard)c;
+      w2.fireball(m);
+    }
     System.out.println(w.mp);
   }
 }
